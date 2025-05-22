@@ -20,7 +20,7 @@ git clone https://github.com/ahmed-khan-2025/NodeJS-Koa-TypeScript.git
 ## 🧪 Development
 npm run dev
 ## 🌐 Usage
-Open your browser and go to http://localhost:3000\
+Open your browser and go to http://localhost:3000 \
 Use the form to add new movies\
 View them in the table below\
 Use ✏️ to edit and 🗑️ to delete
