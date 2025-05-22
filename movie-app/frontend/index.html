@@ -49,7 +49,7 @@
   let editMovieId = null;
 
   async function loadMovies() {
-    const res = await fetch('/movies');
+    const res = await fetch('/api/movies');
     const movies = await res.json();
     movieTableBody.innerHTML = '';
     movies.forEach(addMovieToTable);
@@ -103,7 +103,7 @@
 
     if (editMovieId !== null) {
       // Edit mode
-      const res = await fetch(`/movies/${editMovieId}`, {
+      const res = await fetch(`/api/movies/${editMovieId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
